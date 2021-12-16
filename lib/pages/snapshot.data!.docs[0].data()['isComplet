@@ -1,0 +1,13 @@
+snapshot.data!.docs[0].data()['isCompleted']
+snapshot.data!.docs[0].data()['time']
+snapshot.data!.docs[0].data()['title']
+snapshot.data!.docs[0].data()['description']
+snapshot.data!.docs[0].id
+
+e.data()['description']
+
+0:"description" -> "5"
+1:"time" -> "04:06 PM 
+
+2:"title" -> "E"
+3:"isCompleted" -> false
