@@ -36,7 +36,6 @@ class _HomePageState extends State<HomePage> {
   var user = FirebaseAuth.instance.currentUser;
   bool _isLoading = false;
   bool loading = false;
-  int? finalIndex;
 
   late List<DocumentSnapshot> _docs;
   late List<DocumentSnapshot> _tdocs;
@@ -114,10 +113,10 @@ class _HomePageState extends State<HomePage> {
                   if (cUser != null) {
                     if (cUser.isAnonymous) {
                       Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (builder) => AnnonUserConvert()))
-                          .whenComplete(() {
+                        context,
+                        MaterialPageRoute(
+                            builder: (builder) => AnnonUserConvert()),
+                      ).whenComplete(() {
                         setState(() {
                           loading = false;
                         });
